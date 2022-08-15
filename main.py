@@ -27,13 +27,16 @@ canvas2.create_oval(10, 10, 90, 90, fill="yellow")
 
 canvas3 = Canvas(tk, width=100, height=100)
 canvas3.place(x=300, y=100, anchor=CENTER)
-canvas3.create_rectangle(0, 0, 100, 100, fill="green")
+canvas3.create_rectangle(0, 0, 100, 100, fill="blue")
 
 canvas4 = Canvas(tk, width=300, height=100)
 canvas4.place(x=200, y=500, anchor=CENTER)
 canvas4.create_oval(5, 5, 295, 95, fill="blue")
 canvas4.create_oval(10, 10, 290, 90, fill="yellow")
 
+canvas5= Canvas(tk, width=100, height=100)
+canvas5.place(x=400, y=400, anchor=CENTER)
+canvas5.create_rectangle(0, 0, 100, 100, fill="green")
 
 def drag(event):
     #print(event.x_root, event.y_root)
@@ -47,5 +50,5 @@ canvas1.bind("<B1-Motion>", drag)
 canvas2.bind("<B1-Motion>", drag)
 canvas3.bind("<B1-Motion>", drag)
 canvas4.bind("<B1-Motion>", drag)
-
+canvas5.bind("<B1-Motion>", drag)
 tk.mainloop()
