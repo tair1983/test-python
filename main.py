@@ -36,7 +36,7 @@ canvas4.create_oval(10, 10, 290, 90, fill="yellow")
 
 canvas5= Canvas(tk, width=100, height=100)
 canvas5.place(x=400, y=400, anchor=CENTER)
-canvas5.create_rectangle(0, 0, 100, 100, fill="green")
+canvas5.create_rectangle(0, 0, 100, 100, fill="blue")
 
 def drag(event):
     #print(event.x_root, event.y_root)
